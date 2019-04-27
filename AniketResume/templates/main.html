@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Resume</title>
+
+    <!-- Image link -->
+    <link rel="icon" href="{% static "image/aniket.JPG" %}">
+    <!-- Main Css File link -->
+    <link href="{%static "css/mainstyle.css" %}" rel="stylesheet"/>
+    <!-- Navigation bar Bootstarp link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Font Link -->
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  </head>
+  <body >
+<!-- NAVIGATION BAR -->
+    <nav class="nav navigation">
+      <a class="nav-link active" href="/PersonalInfo">Personal Info</a>
+      <a class="nav-link active" href="/Education">Education</a>
+      <a class="nav-link active" href="/skills">Skills</a>
+      <a class="nav-link active" href="/languages">Languages</a>
+      <a class="nav-link active " href="/certificates">Certificates</a>
+      <a class="nav-link active" href="/projects">Projects</a>
+      <a class="nav-link active " href="/interns">Internships</a>
+      <a class="nav-link active " href="/achievements">Achievements</a>
+      <a class="nav-link active " href="/exit">EXIT</a>
+
+    </nav>
+
+    <!-- Main body -->
+    {% block content %}
+    <h1 class="fontclass">Hi It's Aniket Gupta </h1>
+    <h2 class="fontclass">This is my resume Which I have created using Html, CSS, Bootstrap and Django</h2>
+    <img src="{% static "images/aniket.JPG" %}" alt="OOPS!">
+    {% endblock %}
+
+  </body>
+</html>
